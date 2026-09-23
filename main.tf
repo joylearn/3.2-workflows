@@ -19,7 +19,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "workshop" {
-  #checkov:skip=CKVS_AWS_6:Ensure that S3 bucket has a Public Access block
+  #checkov:skip=CKV2_AWS_6:Ensure that S3 bucket has a Public Access block
   #checkov:skip=CKV_AWS_18:Ensure that S3 bucket has access logging enabled
   #checkov:skip=CKV_AWS_145:Ensure that S3 buckets are encrypted with KMS by default
   #checkov:skip=CKV_AWS_144:Ensure that S3 bucket has cross-region replication enabled
